@@ -60,3 +60,4 @@ function pegaElemento(arr, num){
         
     // }
     // console.log(credencialEhValida('abacaxi', 'minhasenha'));
+    //teste
