@@ -22,12 +22,12 @@
 
 // Escreva uma função comprimentoMedioPalavras
 // que receba duas strings e devolva o comprimento médio de ambas as strings.
-function comprimentoMedioPalavras(str1, str2) {
-    let media = (str1.length + str2.length) / 2;
-    return media;
-}
+// function comprimentoMedioPalavras(str1, str2) {
+//     let media = (str1.length + str2.length) / 2;
+//     return media;
+// }
 
-console.log(comprimentoMedioPalavras("xuxu","beleza"));
+// console.log(comprimentoMedioPalavras("xuxu","beleza"));
 
 // Escreva uma função chamada pegaElemento.
 // Dado um array e um inteiro, pegaElemento devolve o valor de acordo com o inteiro dado,
@@ -37,7 +37,7 @@ console.log(comprimentoMedioPalavras("xuxu","beleza"));
 // Exemplo de entrada:
 // console.log(pegaElemento([1, 3, 5], 1);
 
-function pegaElemento(arr, num){
+//function pegaElemento(arr, num){
     //     for (let i =0; i<arr.length; i++ ){
     //        return arr[num];
         
@@ -59,5 +59,19 @@ function pegaElemento(arr, num){
     //     }
         
     // }
+
     // console.log(credencialEhValida('abacaxi', 'minhasenha'));
-    //teste
+    // Escreva uma função que receba uma array como parâmetro e devolva outra, mas sem elementos repetidos.
+// const numerosVarios = [ 45, 765, 23, 76, 43, 65, 2345, 677, 5, 34, 22, 546, 77, 4355, 5667, 45, 56, 7, 4, 755, 45]
+
+let arr =  [ 45, 765, 23, 76, 43, 65, 2345, 677, 5, 34, 22, 546, 77, 4355, 5667, 45, 56, 7, 4, 755, 45];
+function removeRepetidas(arr){
+    let arraySemRepetir = [];
+    for (let i =0; i<arr.length; i++){
+        if(arraySemRepetir.indexOf(arr[i])==-1){
+            arraySemRepetir.push(arr[i]);
+        }
+    }return arraySemRepetir;
+}
+console.log(removeRepetidas(arr));
+
